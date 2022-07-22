@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="API Testing" skipped="0" tests="1" time="6.09" timestamp="2022-07-21 12:07:47"><testcase name="Delete an employee"><failure message="Unexpected response - &#13;&#10;Expected: &lt;200&gt;&#13;&#10;     but: was &lt;404&gt;&#13;&#10;Unexpected response - &#13;&#10;Expected: &quot;success&quot;&#13;&#10;     but: was null" type="java.lang.AssertionError">Unexpected response - &#13;
+Expected: &lt;200&gt;&#13;
+     but: was &lt;404&gt;&#13;
+Unexpected response - &#13;
+Expected: "success"&#13;
+     but: was null</failure><system-err>Unexpected response - &#13;
+Expected: &lt;200&gt;&#13;
+     but: was &lt;404&gt;&#13;
+Unexpected response - &#13;
+Expected: "success"&#13;
+     but: was null&#13;
+com.lulobank.certificacion.stepdefinitions.GetRequest.iValidateTheBodyAndTheStatusCode(GetRequest.java:46)&#13;
+✽.I validate the body and the status code 200(file:///C:/Users/maria.cala/Documents/Otros/certificacion/src/test/resources/features/delete_an_employee.feature:10)&#13;
+</system-err></testcase></testsuite>
