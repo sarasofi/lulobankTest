@@ -4,6 +4,7 @@ import static net.serenitybdd.screenplay.actors.OnStage.setTheStage;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 import com.lulobank.certificacion.tasks.MakeADeleteRequest;
+import com.lulobank.certificacion.tasks.SaveResponse;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.en.When;
@@ -18,7 +19,7 @@ public class DeleteAnEmployee {
 
 	@When("I make a resquest to delete an employee with id {string}")
 	public void iMakeARequestToDeeleteAnEmployeeWithId(String strId) {
-		theActorInTheSpotlight().wasAbleTo(MakeADeleteRequest.toDeleteEmployeeWithId(strId));
+		theActorInTheSpotlight().wasAbleTo(MakeADeleteRequest.toDeleteEmployeeWithId(strId), SaveResponse.status());
 	}
 
 }

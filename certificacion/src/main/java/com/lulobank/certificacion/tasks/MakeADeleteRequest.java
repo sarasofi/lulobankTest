@@ -21,6 +21,7 @@ public class MakeADeleteRequest implements Task {
 	public <T extends Actor> void performAs(T actor) {
 		actor.attemptsTo(Delete.from(strEndPoint));
 		actor.remember(STATUS_CODE, SerenityRest.lastResponse().getStatusCode());
+		
 	}
 
 	public static MakeADeleteRequest toDeleteEmployeeWithId(String strId) {
