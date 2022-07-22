@@ -1,6 +1,7 @@
 package com.lulobank.certificacion.tasks;
 
 import static com.lulobank.certificacion.utils.Constants.DELETE_EMPLOYEE;
+import static com.lulobank.certificacion.utils.Constants.END_POINT;
 import static com.lulobank.certificacion.utils.Constants.STATUS_CODE;
 
 import net.serenitybdd.rest.SerenityRest;
@@ -23,7 +24,7 @@ public class MakeADeleteRequest implements Task {
 	}
 
 	public static MakeADeleteRequest toDeleteEmployeeWithId(String strId) {
-		return Tasks.instrumented(MakeADeleteRequest.class, DELETE_EMPLOYEE.concat(strId));
+		return Tasks.instrumented(MakeADeleteRequest.class, END_POINT.concat(DELETE_EMPLOYEE.concat(strId)));
 	}
 
 }
